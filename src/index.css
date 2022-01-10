@@ -2,11 +2,25 @@
 
 body {
   margin: 0;
-  background-color: palevioletred;
+  background-color: pink;
 }
 
 .header {
   font-family: "Roboto";
   background-color: azure;
-  font-size: 70px;
+  font-size: 50px;
+  padding: 3%;
+}
+
+.searchDiv {
+  padding: 3%;
+  align-items: ce;
+}
+
+.moviedataContainer {
+  font-family: "Roboto";
+  background-color: bisque;
+  margin: 1% 5%;
+  padding: 2% 4%;
+  border-radius: 10px;
 }
