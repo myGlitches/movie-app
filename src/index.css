@@ -24,3 +24,36 @@ body {
   padding: 2% 4%;
   border-radius: 10px;
 }
+
+.movieTitle {
+  font-size: 3rem;
+}
+
+.movieDatasubContainer {
+  display: flex;
+}
+
+.column2 {
+  padding: 0.1%;
+  margin-left: 5%;
+}
+
+.textInput {
+  font-family: "Roboto";
+  padding: 0.5%;
+  margin-right: 0.5%;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.submitButton {
+  font-family: "Roboto";
+  padding: 0.5%;
+  background-color: burlywood;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.submitButton:hover {
+  background-color: brown;
+}
