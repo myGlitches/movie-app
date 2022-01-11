@@ -29,6 +29,15 @@ body {
   font-size: 3rem;
 }
 
+.titleDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieRating {
+  margin-top: 50px;
+}
+
 .movieDatasubContainer {
   display: flex;
 }

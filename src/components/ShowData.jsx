@@ -1,8 +1,9 @@
 function ShowData({data}) {
     return (
         <div className="moviedataContainer">
-            <div>
+            <div className="titleDiv">
                 <h1 className="movieTitle">{data.Title}</h1>
+                <h3 className="movieRating">IMDB Rating : {data.imdbRating}</h3>
             </div>
             <div className="movieDatasubContainer">
             <div className="column1">
