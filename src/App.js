@@ -1,6 +1,9 @@
 import Header from "./components/Header"
 import ShowData from "./components/ShowData"
 import Search from "./components/Search"
+import Footer from "./components/Footer"
+import About from "./components/About"
+import {BrowserRouter as Router , Route , Routes} from 'react-router-dom'
 import {useState} from 'react'
 
 function App() {
@@ -16,18 +19,29 @@ function App() {
   }
 
   async function fetchMovieData(name) {
-    const response = await fetch(`http://www.omdbapi.com/?t=${name}=&apikey=1a321ac`)
+    const response = await fetch(`https://www.omdbapi.com/?t=${name}&apikey=${process.env.REACT_APP_API_KEY}`)
     const data = await response.json()
     setMovieData(data)
     console.log(data)
   }
 
   return (
-    <div>
+    <>
+    <Router>
       <Header />
-      <Search onSubmit={onSubmitHandler} />
-      {showCard && <ShowData data={movieData} />}
-    </div>
+      <Routes>
+        <Route path='/' element={
+            <>
+              <Search onSubmit={onSubmitHandler} />
+              {showCard && <ShowData data={movieData} />}
+            </>
+        }
+        />    
+          <Route exact path='/about' element={<About/>} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   )
 }
 

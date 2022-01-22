@@ -13,7 +13,7 @@ function Search(props) {
             <input 
             className="textInput" 
             type="text"
-            placeholder="Enter Movie Name here"
+            placeholder="Enter movie name here"
             onChange={(e)=>setSearch(e.target.value)}
              />
 

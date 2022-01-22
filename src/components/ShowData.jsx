@@ -12,7 +12,7 @@ function ShowData({data}) {
             <div className="column2">
                 <h3>Director : </h3>{data.Director}
                 <h3>Cast : </h3>{data.Actors}
-                <h3>Plot : </h3>{data.Plot}
+                <h3>Release Year : </h3>{data.Released}
             </div>
             </div>
         </div>
